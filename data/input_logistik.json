@@ -1,0 +1,24 @@
+{
+    "customerCity": "Ansbach",
+    "pickingDateFrom": "2022-07-22",
+    "customerCountryCode": "DE",
+    "pickingDateTo": "2022-07-22",
+    "deliveryDate": "2022-07-23",
+    "customerZipCode": "91522",
+    "orderNo": "96220979207493",
+    "customerStreet": "Bahnhofsplatz 8\nc/o Zalando SE",
+    "customerName": "Mia Musterer",
+    "packingCategory": "b2b",
+    "items": [
+        {
+            "gtin": 4059117317163,
+            "quantity": 3
+        },
+        {
+            "gtin": 4059117317180,
+            "quantity": 2
+        }
+    ],
+    "orderDate": "2022-07-22",
+    "customerNo": "9170426526"
+}

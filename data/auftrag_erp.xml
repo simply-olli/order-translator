@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <wmsShippingOrder>
+        <number>23469751</number>
+        <date>2023-04-06</date>
+        <pickingOrder>
+            <number>6050406</number>
+            <date>2023-04-06</date>
+        </pickingOrder>
+        <deliveryCustomer>
+            <number>999555</number>
+            <name>Kaufhaus Mustermann</name>
+            <addressData>
+                <street>Hauptstr. 2</street>
+                <postalCode>10115</postalCode>
+                <city>Berlin</city>
+                <country>DE</country>
+            </addressData>
+        </deliveryCustomer>
+        <position>
+            <ean>4056404004355</ean>
+            <quantity>2</quantity>
+            <product>
+                <name>Kain</name>
+            </product>
+        </position>
+        <position>
+            <ean>4056404004423</ean>
+            <quantity>1</quantity>
+            <product>
+                <name>Kain</name>
+            </product>
+        </position>
+        <position>
+            <ean>4059117148545</ean>
+            <quantity>1</quantity>
+            <product>
+                <name>Käthi</name>
+            </product>
+        </position>
+    </wmsShippingOrder>
+</simplicity>
+
