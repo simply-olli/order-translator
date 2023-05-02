@@ -37,12 +37,57 @@ Das Programm soll über die Kommandozeile gestartet werden. Dazu soll der Einsti
 
 ### Lösung
 
-Wir rufen das [Script](main.py) über die Kommandozeile mit dem Befehl `python3 main.py` auf:
+Wir rufen das Script über die Kommandozeile mit dem Befehl `python3 main.py` auf:
 
 Ausgabe:
 ```
-$ python3 main.py
+Hallo
+```
 
-> Hallo
+## Lesson 02
+
+Ziel dieser Lektion ist es den Inhalt einer Datei auszulesen. Wir starten mit der Datei `auftrag_onlineshop.json` welche im Verzeichnis `data` liegt. 
+Der Inhalt dieser Datei soll auf der Konsole ausgegeben werden.
+
+### Lösung
+
+Wir rufen das angepasste [Script](main.py) über die Kommandozeile mit dem Befehl `python3 main.py` auf:
+
+Ausgabe:
+```
+{
+  "orderReference": "32345423",
+  "currency": "EUR",
+  "customerReference": "7788997",
+  "orderDate": "2023-04-24T08:48:07",
+  "shippingAddress": {
+    "firstName": "Mia",
+    "lastName": "Mustermann",
+    "address1": "Hauptstr.",
+    "address2": "1",
+    "address3": "",
+    "city": "Berlin",
+    "zipCode": "10115",
+    "countryCode": "DE"
+  },
+  "orderItems": [
+    {
+      "gtin": "4251238918483",
+      "name": "Silani"
+    },
+    {
+      "sku": "4059117317163",
+      "name": "Sarion"
+    },
+    {
+      "sku": "4059117317163",
+      "name": "Sarion"
+    },
+    {
+      "sku": "4251200728256",
+      "name": "Sanika"
+    }
+  ]
+}
 ```
 

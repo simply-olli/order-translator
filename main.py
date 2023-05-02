@@ -1,2 +1,8 @@
-if __name__ == '__main__': # stellt sicher, dass dieses Script nur über die Konsole ausgerufen werden kann
-    print("Hallo")
+if __name__ == '__main__':
+    with open(
+            'data/auftrag_onlineshop.json',
+            'r'
+    ) as file:  # öffnet die als erstes Argument angegebene Datei im Lese-Modus ("r")
+        content = file.read()  # schreibt den Inhalt der Datei in die Variable "content"
+
+        print(content)  # gibt den Inhalt der Variable "content" auf der Konsole aus
