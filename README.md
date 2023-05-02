@@ -31,3 +31,18 @@ wir eingerichtet haben. Der Zugang wird den Projektteilnehmern bereitgestellt.
 4. Wenn ihr mit eurem Ergebnis zufrieden seid, reicht ihr einen Pull-Request ein. Damit kann der Code aus von eurem
    GitHub-Account in das Repository im simplicity-GitHub-Account übertragen werden.
 
+## Lesson 01
+
+Das Programm soll über die Kommandozeile gestartet werden. Dazu soll der Einstiegspunkt erstellt werden, welche uns zuerst nur mit einem Hallo begrüßt.
+
+### Lösung
+
+Wir rufen das [Script](main.py) über die Kommandozeile mit dem Befehl `python3 main.py` auf:
+
+Ausgabe:
+```
+$ python3 main.py
+
+> Hallo
+```
+
