@@ -91,3 +91,18 @@ Ausgabe:
 }
 ```
 
+## Lesson 03
+
+Als Nächstes möchten wir auf einzelne Werte in den Auftragsdaten zugreifen. Für diese Übung möchten wir die Auftragsnummer und den vollständigen Namen der Kundin ausgeben.
+
+### Lösung
+
+Wir rufen das angepasste [Script](main.py) über die Kommandozeile mit dem Befehl `python3 main.py` auf:
+
+Ausgabe:
+```
+Auftragsnummer: 32345423
+Name der Kundin: Mia Mustermann
+```
+
+Um Variablen und fest definierten Text gemeinsam auszugeben wurde hier die [f-string-Funktion](https://docs.python.org/3/reference/lexical_analysis.html#f-strings) genutzt.
