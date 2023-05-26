@@ -106,3 +106,18 @@ Name der Kundin: Mia Mustermann
 ```
 
 Um Variablen und fest definierten Text gemeinsam auszugeben wurde hier die [f-string-Funktion](https://docs.python.org/3/reference/lexical_analysis.html#f-strings) genutzt.
+
+## Lession 04
+
+In den nächsten Übungen schauen wir uns die bestellten Artikel, also die Auftragspositionen, an. Zuerst möchten wir die Namen aller bestellten Artikel ausgeben.
+
+Gewünschte Ausgabe:
+```
+Silani
+Sarion
+Sarion
+Sanika
+```
+
+Bei den Auftragspositionen handelt es sich um eine Liste unbestimmter Größe (jede Bestellung kann 1 bis n Artikel enthalten).
+So eine Liste durchlaufen wir in einer For-Schleife.
