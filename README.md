@@ -93,7 +93,7 @@ Ausgabe:
 
 ## Lesson 03
 
-Als Nächstes möchten wir auf einzelne Werte in den Auftragsdaten zugreifen. Für diese Übung möchten wir die Auftragsnummer und den vollständigen Namen der Kundin ausgeben.
+Als Nächstes möchten wir auf einzelne Werte in den Auftragsdaten zugreifen. Ziel dieser Übung ist die Ausgabe der Auftragsnummer und des vollständigen Namen der Kundin.
 
 ### Lösung
 
