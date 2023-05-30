@@ -72,7 +72,7 @@ Ausgabe:
   },
   "orderItems": [
     {
-      "gtin": "4251238918483",
+      "sku": "4251238918483",
       "name": "Silani"
     },
     {
