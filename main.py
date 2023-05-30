@@ -23,5 +23,30 @@ if __name__ == '__main__':
             else:
                 sku_sum[order_item['sku']] = sku_sum[order_item['sku']] + 1 # ist die SKU bereits im Dict geführt, addieren wir 1 zum aktuellen Wert
 
-        print(sku_sum) # Ausgabe des Dicts
+        items = [] # eine neue Liste wird angelegt. In diese wollen wir die Items in der gewünschten Struktur hinterlegen
+        for sku, sum in sku_sum.items(): # wir durchlaufen das oben angelegte Dict (jedes Element durch .items()). Dabei wird der linke Wert (key) jedes Elements in die Variable sku geschrieben. Der Rechte Wert (value) jedes Elements in die Variable sum
+            items.append( # fügt ein neues Element unsere Liste hinzu
+                {
+                    'gtin': sku, # die SKU soll als gtin übertragen
+                    'quantity': sum #die sum soll als Quantity übertragen werden
+                }
+            )
+
+        # in den nächsten Zeilen werden die Werte in die von der Logistik geforderte Struktur gebracht
+        request_payload = {
+            "customerCity": order_data['shippingAddress']['city'],
+            "pickingDateFrom": "2022-07-22", # wird im nächsten Schritt bearbeitet
+            "pickingDateTo": "2022-07-22", # wird im nächsten Schritt bearbeitet
+            "customerCountryCode": order_data['shippingAddress']['countryCode'],
+            "customerZipCode": order_data['shippingAddress']['zipCode'],
+            "orderNo": order_data['orderReference'],
+            "customerStreet": order_data['shippingAddress']['address1'] + ' ' + order_data['shippingAddress']['address2'],
+            "customerName": order_data["shippingAddress"]["firstName"] + ' ' + order_data["shippingAddress"]["lastName"],
+            "packingCategory": "b2c",
+            "items": items,
+            "orderDate": "2022-07-22", # wird im nächsten Schritt bearbeitet
+            "customerNo": order_data['customerReference']
+        }
+
+        print(request_payload)
 

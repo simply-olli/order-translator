@@ -132,8 +132,40 @@ Gewünschte Ausgabe:
 {'4251238918483': 1, '4059117317163': 2, '4251200728256': 1}
 ```
 
+## Lesson 06
 
+Jetzt soll der Payload zur Übertragung an die Logistik aufgebaut werden. Die Struktur können wir der [Beispieldatei](data%2Flogistik%2Fbeispiel_input.json), oder dem Data-Contract entnehmen:
 
+Gewünschte Ausgabe in neuer Struktur:
 
+```
+{
+  "customerCity": "Berlin",
+  "pickingDateFrom": "2022-07-22",
+  "pickingDateTo": "2022-07-22",
+  "customerCountryCode": "DE",
+  "customerZipCode": "10115",
+  "orderNo": "32345423",
+  "customerStreet": "Hauptstr. 1",
+  "customerName": "Mia Mustermann",
+  "packingCategory": "b2c",
+  "items": [
+    {
+      "gtin": "4251238918483",
+      "quantity": 1
+    },
+    {
+      "gtin": "4059117317163",
+      "quantity": 2
+    },
+    {
+      "gtin": "4251200728256",
+      "quantity": 1
+    }
+  ],
+  "orderDate": "2022-07-22",
+  "customerNo": "7788997"
+}
+```
 
-
+In dieser Übung werden die Datumsfelder noch nicht betrachtet
