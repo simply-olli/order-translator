@@ -121,3 +121,19 @@ Sanika
 
 Bei den Auftragspositionen handelt es sich um eine Liste unbestimmter Größe (jede Bestellung kann 1 bis n Artikel enthalten).
 So eine Liste durchlaufen wir in einer For-Schleife.
+
+## Lesson 05
+
+Der Artikel Sarion (sku 4059117317163) wurde in unserem Beispielauftrag doppelt bestellt. Die Logistik möchte gleiche Artikel zusammengefasst, unter Angabe der Bestellmenge, übergeben bekommen. Dazu möchten wir die SKU mit ihrer jeweiligen Mengen ausgeben
+
+Gewünschte Ausgabe:
+
+```
+{'4251238918483': 1, '4059117317163': 2, '4251200728256': 1}
+```
+
+
+
+
+
+
